@@ -1,4 +1,4 @@
-package exercises.inheritance.technology;
+package exercises.technology.main;
 
 public class Laptop extends Computer {
     private double weight; // laptop weight in pounds.
@@ -15,5 +15,9 @@ public class Laptop extends Computer {
         else {
             return false;
         }
+    }
+
+    public double getWeight() {
+        return weight;
     }
 }

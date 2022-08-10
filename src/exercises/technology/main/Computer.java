@@ -1,6 +1,6 @@
-package exercises.inheritance.technology;
+package exercises.technology.main;
 
-public class Computer extends AbstractEntity {
+public class Computer extends AbstractEntity{
     private int ram;
     private int storage;
     private boolean hasKeyboard;
@@ -12,12 +12,12 @@ public class Computer extends AbstractEntity {
         this.hasKeyboard = hasKeyboard;
     }
 
-    public void increaseRAM (int n) {
-        this.ram = this.ram + n;
+    public int increaseRAM (int n) {
+        return this.ram = this.ram + n;
     }
 
-    public void increaseStorage (int x) {
-        this.storage = this.storage + x;
+    public int increaseStorage (int x) {
+        return this.storage = this.storage + x;
     }
 
     public int getRam() {

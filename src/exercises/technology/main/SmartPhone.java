@@ -1,4 +1,4 @@
-package exercises.inheritance.technology;
+package exercises.technology.main;
 
 public class SmartPhone extends Computer {
     private int numberOfSelfies;
@@ -8,8 +8,8 @@ public class SmartPhone extends Computer {
         this.numberOfSelfies = numberOfSelfies;
     }
 
-    public void takeSelfie() {
-        this.numberOfSelfies = this.numberOfSelfies + 1;
+    public int takeSelfie() {
+        return (this.numberOfSelfies = this.numberOfSelfies + 1);
     }
 
     public int getNumberOfSelfies() {
